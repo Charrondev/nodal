@@ -59,7 +59,7 @@ let LazyNodal = {
 Object.defineProperties(LazyNodal, {
   API: {
     get: function() {
-      return Nodal.API || (Nodal.API = require('./required/api.js'));
+      return Nodal.API || (Nodal.API = require('./required/api.js').default);
     },
     enumerable: true
   },
@@ -70,13 +70,13 @@ Object.defineProperties(LazyNodal, {
   },
   Application: {
     get: function() {
-      return Nodal.Application || (Nodal.Application = require('./required/application.js'));
+      return Nodal.Application || (Nodal.Application = require('./required/application.js')).default;
     },
     enumerable: true
   },
   Controller: {
     get: function() {
-      return Nodal.Controller || (Nodal.Controller = require('./required/controller.js'));
+      return Nodal.Controller || (Nodal.Controller = require('./required/controller.js').default);
     },
     enumerable: true
   },
@@ -88,79 +88,79 @@ Object.defineProperties(LazyNodal, {
   },
   Daemon: {
     get: function() {
-      return Nodal.Daemon || (Nodal.Daemon = require('./required/daemon.js'));
+      return Nodal.Daemon || (Nodal.Daemon = require('./required/daemon.js').default);
     },
     enumerable: true
   },
   Database: {
     get: function() {
-      return Nodal.Database || (Nodal.Database = require('./required/db/database.js'));
+      return Nodal.Database || (Nodal.Database = require('./required/db/database.js').default);
     },
     enumerable: true
   },
   GraphQuery: {
     get: function() {
-      return Nodal.GraphQuery || (Nodal.GraphQuery = require('./required/graph_query.js'));
+      return Nodal.GraphQuery || (Nodal.GraphQuery = require('./required/graph_query.js').default);
     },
     enumerable: true
   },
   ItemArray: {
     get: function() {
-      return Nodal.ItemArray || (Nodal.ItemArray = require('./required/item_array.js'));
+      return Nodal.ItemArray || (Nodal.ItemArray = require('./required/item_array.js').default);
     },
     enumerable: true
   },
   Migration: {
     get: function() {
-      return Nodal.Migration || (Nodal.Migration = require('./required/db/migration.js'));
+      return Nodal.Migration || (Nodal.Migration = require('./required/db/migration.js').default);
     },
     enumerable: true
   },
   Mime: {
     get: function() {
-      return Nodal.Mime || (Nodal.Mime = require('./required/mime.js'));
+      return Nodal.Mime || (Nodal.Mime = require('./required/mime.js').default);
     },
     enumerable: true
   },
   Model: {
     get: function() {
-      return Nodal.Model || (Nodal.Model = require('./required/model.js'));
+      return Nodal.Model || (Nodal.Model = require('./required/model.js').default);
     },
     enumerable: true
   },
   ModelArray: {
     get: function() {
-      return Nodal.ModelArray || (Nodal.ModelArray = require('./required/model_array.js'));
+      return Nodal.ModelArray || (Nodal.ModelArray = require('./required/model_array.js').default);
     },
     enumerable: true
   },
   ModelFactory: {
     get: function() {
-      return Nodal.ModelFactory || (Nodal.ModelFactory = require('./required/model_factory.js'));
+      return Nodal.ModelFactory || (Nodal.ModelFactory = require('./required/model_factory.js').default);
     },
     enumerable: true
   },
   RelationshipGraph: {
     get: function() {
-      return Nodal.RelationshipGraph || (Nodal.RelationshipGraph = require('./required/relationship_graph.js'));
+      return Nodal.RelationshipGraph || (Nodal.RelationshipGraph = require('./required/relationship_graph.js').default);
     },
     enumerable: true
   },
   Router: {
     get: function() {
-      return Nodal.Router || (Nodal.Router = require('./required/router.js'));
+      return Nodal.Router || (Nodal.Router = require('./required/router.js').default);
     },
     enumerable: true
   },
   Scheduler: {
     get: function() {
-      return Nodal.Scheduler || (Nodal.Scheduler = require('./required/scheduler.js'));
+      return Nodal.Scheduler || (Nodal.Scheduler = require('./required/scheduler.js').default);
     },
     enumerable: true
   },
   SchemaGenerator: {
     get: function() {
-      return Nodal.SchemaGenerator || (Nodal.SchemaGenerator = require('./required/db/schema_generator.js'));
+      return Nodal.SchemaGenerator || (Nodal.SchemaGenerator = require('./required/db/schema_generator.js').default);
     },
     enumerable: true
   }

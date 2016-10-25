@@ -31,14 +31,21 @@
   },
   "devDependencies": {
     "@types/async": "^2.0.32",
+    "@types/node": "^6.0.45",
     "@types/pg": "^6.1.33",
     "chai": "~3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.0.2",
+    "merge2": "^1.0.2",
     "mocha": "~2.4.5",
+    "rimraf": "^2.5.4",
     "tslint": "^3.15.1",
     "tslint-microsoft-contrib": "^2.0.12",
     "typescript": "^2.0.3"
   },
   "scripts": {
+    "build": "rimraf core/required; rimraf definitions; gulp build;",
+    "lint": "tslint -c tslint.json 'core/src/**/*.ts'",
     "test": "mocha ./test/runner.js",
     "docs": "documentation build core/module.js -o docs -f html"
   },
@@ -53,5 +60,6 @@
   "homepage": "https://github.com/keithwhor/nodal",
   "bin": {
     "nodal": "cli/bin.js"
-  }
+  },
+  "types": "./definitions/nodal-types.d.ts"
 }

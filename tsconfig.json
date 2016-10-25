@@ -4,6 +4,9 @@
     "module": "commonjs",
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "types": ["node"]
   }
 }
