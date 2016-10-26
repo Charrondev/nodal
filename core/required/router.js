@@ -4,3 +4,5 @@ class Router extends fxn.Router {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Router;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJvdXRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsTUFBWSxHQUFHLFdBQU0sS0FBSyxDQUFDLENBQUE7QUFFM0IscUJBQXFCLEdBQUcsQ0FBQyxNQUFNO0FBQUUsQ0FBQztBQUVsQztrQkFBZSxNQUFNLENBQUMiLCJmaWxlIjoicm91dGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgZnhuIGZyb20gJ2Z4bic7XG5cbmNsYXNzIFJvdXRlciBleHRlbmRzIGZ4bi5Sb3V0ZXIge31cblxuZXhwb3J0IGRlZmF1bHQgUm91dGVyO1xuIl19

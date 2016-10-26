@@ -193,7 +193,6 @@ module.exports = Nodal => {
       let house = new House({id: 1});
       parent.setJoined('house', house);
       house.setJoined('parent', parent);
-
       let obj = parent.toObject();
 
       expect(obj).to.have.ownProperty('id');
@@ -291,7 +290,6 @@ module.exports = Nodal => {
       expect(obj[0].posts).to.exist;
       expect(obj[0].posts[0].comments).to.exist;
 
-
     });
 
     describe('#save', function() {
@@ -365,6 +363,8 @@ module.exports = Nodal => {
 
           expect(err).to.not.exist;
           expect(parent).to.exist;
+
+          parent.get('id');
 
           Parent.destroy(parent.get('id'), (err, parent) => {
 
@@ -469,9 +469,7 @@ module.exports = Nodal => {
 
       Parent.query()
         .end((err, parents) => {
-
           parents.destroyAll((err) => {
-
             parents.forEach((parent) => {
               expect(parent.inStorage()).to.equal(false);
             });
@@ -492,7 +490,7 @@ module.exports = Nodal => {
       it('should not save all parents with verification errors', (done) => {
 
         ParentFactory.create([
-          {name: 'Kate'},
+          {name: 'Kat'},
           {name: 'Sayid'},
           {name: 'Jack'},
           {name: 'Sawyer'},
